@@ -119,7 +119,7 @@
 
     <section class="portfolio">
 
-        <div class="portfolio-container transition3">
+        <div class="portfolio-container transition4">
             <div class="portfolio-left">
                 <div class="inner">
                     <p class="subtitle">Dynamically Display Data</p>
@@ -176,6 +176,17 @@
         gsap.from('.transition3', {
             scrollTrigger: {
                 trigger: '.transition3',
+                start: "center bottom"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .6
+        });
+
+        gsap.from('.transition4', {
+            scrollTrigger: {
+                trigger: '.transition4',
                 start: "center bottom"
             },
             y: 50,

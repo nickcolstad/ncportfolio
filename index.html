@@ -9,31 +9,31 @@
 </head>
 <body>
     
+<!-- Nav Header -->
     <div class="nav-container">
         <header>
             <a href="index.html" class="logo">Nick Colstad</a>
 
             <nav>
                 <ul>
-                    <li><a href="#">My Work</a></li>
-                    <li><a href="#">My Skills</a></li>
-                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#projects">My Work</a></li>
+                    <li><a href="#myskills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <div class="social-header">
             <ul>
-                <li><a href="https://github.com/nickcolstad"><img src="images/github.png" alt="gitHub"></a></li>
-                <li><a href="https://www.linkedin.com/in/nick-colstad-5373b5148"><img src="images/linkedin.png" alt="linkedin"></a></li>
+                <li><a href="https://github.com/nickcolstad" target="_blank" rel="noopener noreferrer"><img src="images/github.png" alt="gitHub"></a></li>
+                <li><a href="https://www.linkedin.com/in/nick-colstad-5373b5148" target="_blank" rel="noopener noreferrer"><img src="images/linkedin.png" alt="linkedin"></a></li>
             </ul>
         </div>
     </div>
 
+<!-- Meet -->
     <div class="hero">
         <div class="content">
-            <h1 class="stagger1">Hello, I'm Nick Colstad. I work as a frontend developer 
-
-            </h1>
+            <h1 class="stagger1">Hello, I'm Nick Colstad. </h1>
             <div class="meet stagger1">
                 <span>👇</span>
                 <p>Meet Nick Colstad</p>
@@ -49,8 +49,9 @@
               </g>
             </g>
           </svg>
-          
-    </div>
+        </div>
+
+<!-- Design Graphic -->
         <svg xmlns="http://www.w3.org/2000/svg" class="hero-image" width="620" height="620" viewBox="0 0 620 620">
         <g id="hero-image" transform="translate(-982 -250)">
             <rect class="square-anim" id="Rectangle_25" data-name="Rectangle 25" width="155" height="155" rx="25" transform="translate(1292 250)" fill="#222"/>
@@ -65,7 +66,8 @@
         </svg>
     </div>  
 
-    <section class="featured">
+<!-- Featured Project -->
+    <section class="featured" id="projects">
         <div class="left">
             <div class="inner transition2">
                 <p class="subtitle">Featured Project</p>
@@ -74,10 +76,11 @@
                 <p class="featured-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum obcaecati natus id minus dolore sunt modi distinctio, quos doloribus impedit voluptatem incidunt.</p>
             </div>
         </div>
-        <a href="#"><img class="right transition2" src="/images/bustracker.jpeg" alt="featured project"></a>
+        <a href="https://github.com/nickcolstad/Bus-Tracker" target="_blank" rel="noopener noreferrer"><img class="right transition2" src="images/bustracker.jpeg" alt="featured project"></a>
     </section>
 
-    <section class="skills">
+<!-- Skills Cards -->
+    <section class="skills" id="myskills">
         <div class="skills-container">
             <ul>
                 <li class="transition2">
@@ -105,6 +108,7 @@
         </div>
     </section>
 
+<!-- Portfolio Work -->
     <section class="portfolio">
 
         <div class="portfolio-container transition3">
@@ -133,22 +137,49 @@
         </div>
     </section>
 
-    <div id="contact">
-        <h2>Get In Touch 📧</h2>
-        <div id="contact-form">
-            <form action="https://formspree.io/f/xlezbrne" method="POST">
-                <label>Your email:
-                    <input type="email" name="email">
-                </label>
-                <label>Your message:
-                    <textarea name="message"></textarea>
-                </label>
-                <!-- your other form fields go here -->
-                <button type="submit">Send</button>
-            </form>
+    <!-- Contact Form -->
+
+    <div class="contact-form">
+    <h1>Submit a Message</h1>
+    <form>
+        <div class="input-group">
+            <input type="text" id="name" required>
+            <label for="name">Your Name</label>
+        </div>
+        <div class="input-group">
+            <input type="email" id="email" required>
+            <label for="email">Email Address</label>
+        </div>
+        <div class="input-group">
+            <textarea id="message" rows="4" required></textarea>
+            <label for="message">Your Message</label>
+        </div>
+    </form>
+
+    </div>
+
+<!-- Nav Footer -->
+    <div class="nav-container">
+        <header>
+            <a href="index.html" class="logo">Nick Colstad</a>
+
+            <nav>
+                <ul>
+                    <li><a href="#projects">My Work</a></li>
+                    <li><a href="#myskills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="social-header">
+            <ul>
+                <li><a href="https://github.com/nickcolstad"><img src="images/github.png" alt="gitHub"></a></li>
+                <li><a href="https://www.linkedin.com/in/nick-colstad-5373b5148"><img src="images/linkedin.png" alt="linkedin"></a></li>
+            </ul>
         </div>
     </div>
 
+<!-- JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 

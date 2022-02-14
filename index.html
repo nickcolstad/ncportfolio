@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/9d7460d8f4.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
@@ -88,21 +89,33 @@
                         <img src="images/frontend.png" alt="Frontend Development">
                     </div>
                     <p class="skill-title">Frontend Development</p>
-                    <p class="featured-desc skill desk">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi numquam quas natus! Dicta tempore vero eos voluptatibus architecto, aut magnam ullam.</p>
+                    <p class="featured-desc skill desk">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Eligendi numquam quas natus! Dicta tempore vero eos voluptatibus 
+                        architecto, aut magnam ullam.
+                    </p>
                 </li>
                 <li class="transition2">
                     <div class="icon-container one">
                         <img src="images/SQL.png" alt="SQL">
                     </div>
                     <p class="skill-title">SQL Database Management</p>
-                    <p class="featured-desc skill desk">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi numquam quas natus! Dicta tempore vero eos voluptatibus architecto, aut magnam ullam.</p>
+                    <p class="featured-desc skill desk">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Eligendi numquam quas natus! Dicta tempore vero eos voluptatibus 
+                        architecto, aut magnam ullam.
+                    </p>
                 </li>
                 <li class="transition2">
                     <div class="icon-container three">
                         <img src="images/jest.png" alt="Jest">
                     </div>
                     <p class="skill-title">Testing with Jest</p>
-                    <p class="featured-desc skill desk">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi numquam quas natus! Dicta tempore vero eos voluptatibus architecto, aut magnam ullam..</p>
+                    <p class="featured-desc skill desk">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Eligendi numquam quas natus! Dicta tempore vero eos voluptatibus 
+                        architecto, aut magnam ullam.
+                    </p>
                 </li>
             </ul>
         </div>
@@ -116,10 +129,13 @@
                 <div class="inner">
                     <p class="subtitle">Animated Style Application</p>
                     <p class="featured-title">Moving Eyes</p>
-                    <p class="featured-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error accusamus non corrupti, dolorum laudantium ipsam vitae.</p>
+                    <p class="featured-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Error accusamus non corrupti, dolorum laudantium ipsam vitae.
+                    </p>
                 </div>
             </div>
-            <a href="#"><img src="images/eyes.jpeg" alt="Eyes"></a>
+            <a href="#https://github.com/nickcolstad/Moving-eyes" target="_blank" rel="noopener noreferrer"><img src="images/eyes.jpeg" alt="Eyes"></a>
         </div>
     </section>
 
@@ -130,30 +146,37 @@
                 <div class="inner">
                     <p class="subtitle">Dynamically Display Data</p>
                     <p class="featured-title">Pacmen Factory</p>
-                    <p class="featured-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error accusamus non corrupti, dolorum laudantium ipsam vitae, est autem ipsa aspernatur placeat molestiae.</p>
+                    <p class="featured-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Error accusamus non corrupti, dolorum laudantium ipsam vitae, 
+                        est autem ipsa aspernatur placeat molestiae.
+                    </p>
                 </div>
             </div>
-            <a href="#"><img src="images/pacman.jpeg" alt="Eyes"></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="images/pacman.jpeg" alt="Eyes"></a>
         </div>
     </section>
 
     <!-- Contact Form -->
+    <div class="submit-message">
+        <h1>Submit a Message</h1>
+    </div>
 
     <div class="contact-form">
-    <h1>Submit a Message</h1>
-    <form>
+    <form action="https://formspree.io/f/xlezbrne" method="POST">
         <div class="input-group">
-            <input type="text" id="name" required>
-            <label for="name">Your Name</label>
+            <input type="text" id="name" required name="name">
+            <label for="name"><i class="fa-solid fa-user"></i> Name</label>
         </div>
         <div class="input-group">
-            <input type="email" id="email" required>
-            <label for="email">Email Address</label>
+            <input type="email" id="email" required name="replyto">
+            <label for="email"><i class="fa-solid fa-at"></i> Email</label>
         </div>
         <div class="input-group">
-            <textarea id="message" rows="4" required></textarea>
-            <label for="message">Your Message</label>
+            <textarea id="message" rows="3" required name="mesage"></textarea>
+            <label for="message"><i class="fa-solid fa-message"></i> Message</label>
         </div>
+        <button type="submit">SUBMIT <i class="fa-solid fa-paper-plane"></i></button>
     </form>
 
     </div>
@@ -161,7 +184,7 @@
 <!-- Nav Footer -->
     <div class="nav-container">
         <header>
-            <a href="index.html" class="logo">Nick Colstad</a>
+            <a href="index.html" class="logo"> Made with &hearts; <br>By Nick Colstad</a>
 
             <nav>
                 <ul>
@@ -184,6 +207,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
+
+        // Scroll animation
         gsap.registerPlugin(ScrollTrigger);
         var tl = gsap.timeline();
 
@@ -204,6 +229,7 @@
             opacity: 0, y: 50, ease: Power4.easeOut, duration: 1
         }, "-=2")
 
+        // Graphic animation
         gsap.from('.square-anim', {
             stagger: 0.2, 
             scale: 0.1,
@@ -211,6 +237,7 @@
             ease: Back.easeOut.config(1.7)
         })
 
+        // Transitons
         gsap.from('.transition2', {
             scrollTrigger: {
                 trigger: '.transition2',
@@ -243,6 +270,17 @@
             duration: 1.2,
             stagger: .6
         });
+
+        // Clear form on submission
+        // let btnClear = document.querySelector('button');
+        // let inputs = document.querySelectorAll('input');
+        // let texts = document.querySelector('textarea');
+
+        // btnClear.addEventListener('click', () => {
+        //     input.forEach(input => input.value = '');
+        //     input.forEach(textarea => textarea.value = '');
+        // })
+
     </script>
 </body>
 </html>

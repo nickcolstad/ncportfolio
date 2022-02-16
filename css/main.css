@@ -274,11 +274,11 @@ textarea:valid~label {
     margin-left: 2em;
     margin-top: 1em;
   }
-  .skills {
+  /* .skills { */
     /* margin-top: -5em; */
     /* margin-bottom: -7em; */
     /* padding-top: 7em; */
-  }
+  /* } */
   .skills-container ul {
     display: grid;
     grid-template-columns: repeat(3, auto);

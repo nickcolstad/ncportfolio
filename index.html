@@ -17,9 +17,9 @@
 
             <nav>
                 <ul>
-                    <li><a href="#projects">My Work</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#myskills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact-me">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -34,7 +34,7 @@
 <!-- Meet -->
     <div class="hero">
         <div class="content">
-            <h1 class="stagger1">Hello, I'm Nick Colstad. </h1>
+            <h1 class="stagger1">Welcome To <br>My Portfolio. </h1>
             <div class="meet stagger1">
                 <span>👇</span>
                 <p>Meet Nick Colstad</p>
@@ -67,14 +67,19 @@
         </svg>
     </div>  
 
-<!-- Featured Project -->
-    <section class="featured" id="projects">
+<!-- Featured Bio -->
+    <section class="featured">
         <div class="left">
             <div class="inner transition2">
-                <p class="subtitle">Featured Project</p>
-                <a href="#" class="featured-title">Live Bus Tracker</a>
+                <p class="subtitle">Nick Colstad</p>
+                <a href="#" class="featured-title">About Me</a>
 
-                <p class="featured-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum obcaecati natus id minus dolore sunt modi distinctio, quos doloribus impedit voluptatem incidunt.</p>
+                <p class="featured-desc">
+                    I am 23 years old and I live in New Hampshire near the ocean. 
+                    My work as a software developer is primarily with HTML, CSS, and Javascript, but I also have experience in Python and SQL.  
+                    I really enjoy learning new software and I look forward to becoming a full-time software engineer soon. 
+                    
+                </p>
             </div>
         </div>
         <a href="https://github.com/nickcolstad/Bus-Tracker" target="_blank" rel="noopener noreferrer"><img class="right transition2" src="images/bustracker.jpeg" alt="featured project"></a>
@@ -82,6 +87,9 @@
 
 <!-- Skills Cards -->
     <section class="skills" id="myskills">
+        <div class="skill-title">
+            <h1>My Skills</h1>
+        </div>
         <div class="skills-container">
             <ul>
                 <li class="transition2">
@@ -90,20 +98,16 @@
                     </div>
                     <p class="skill-title">Frontend Development</p>
                     <p class="featured-desc skill desk">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Eligendi numquam quas natus! Dicta tempore vero eos voluptatibus 
-                        architecto, aut magnam ullam.
+                        Build functional applications and user-friendly interfaces with HTML, Javascript, and CSS
                     </p>
                 </li>
                 <li class="transition2">
                     <div class="icon-container one">
                         <img src="images/SQL.png" alt="SQL">
                     </div>
-                    <p class="skill-title">SQL Database Management</p>
+                    <p class="skill-title">SQL Database</p>
                     <p class="featured-desc skill desk">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Eligendi numquam quas natus! Dicta tempore vero eos voluptatibus 
-                        architecto, aut magnam ullam.
+                        Work with SQL to communicate with databases and activley update and retrieve data
                     </p>
                 </li>
                 <li class="transition2">
@@ -112,9 +116,7 @@
                     </div>
                     <p class="skill-title">Testing with Jest</p>
                     <p class="featured-desc skill desk">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Eligendi numquam quas natus! Dicta tempore vero eos voluptatibus 
-                        architecto, aut magnam ullam.
+                        Use Test Driven Development (TDD) with Jest to ensure unit testing on programs written in Javascript.   
                     </p>
                 </li>
             </ul>
@@ -122,20 +124,39 @@
     </section>
 
 <!-- Portfolio Work -->
+    <div class="project-title" id="projects">
+        <h1>Projects</h1>
+    </div>
+    <section class="portfolio" id="projects">
+        <div class="portfolio-container transition3">
+            <div class="portfolio-left">
+                <div class="inner">
+                    <p class="subtitle">Project #1 </p>
+                    <p class="featured-title">Live Bus Tracker</p>
+                    <p class="featured-desc">
+                        This web application pulls data from MBTA and displays live bus locations between MIT and Harvard. 
+                        <br>Built in Javascript, HTML, CSS, and Mapbox
+                    </p>
+                </div>
+            </div>
+            <a href="https://github.com/nickcolstad/Bus-Tracker" target="_blank" rel="noopener noreferrer"><img src="images/bustracker.jpeg" alt="Bus Tracker"></a>
+        </div>
+    </section>
+
     <section class="portfolio">
 
         <div class="portfolio-container transition3">
             <div class="portfolio-left">
                 <div class="inner">
-                    <p class="subtitle">Animated Style Application</p>
+                    <p class="subtitle">Project #2</p>
                     <p class="featured-title">Moving Eyes</p>
                     <p class="featured-desc">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Error accusamus non corrupti, dolorum laudantium ipsam vitae.
+                        These eyes will follow your every move.
+                        <br>Built in HTML, CSS, and Javascript
                     </p>
                 </div>
             </div>
-            <a href="#https://github.com/nickcolstad/Moving-eyes" target="_blank" rel="noopener noreferrer"><img src="images/eyes.jpeg" alt="Eyes"></a>
+            <a href="https://github.com/nickcolstad/Moving-eyes" target="_blank" rel="noopener noreferrer"><img src="images/eyes.jpeg" alt="Eyes"></a>
         </div>
     </section>
 
@@ -144,22 +165,21 @@
         <div class="portfolio-container transition4">
             <div class="portfolio-left">
                 <div class="inner">
-                    <p class="subtitle">Dynamically Display Data</p>
+                    <p class="subtitle">Project #3</p>
                     <p class="featured-title">Pacmen Factory</p>
                     <p class="featured-desc">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Error accusamus non corrupti, dolorum laudantium ipsam vitae, 
-                        est autem ipsa aspernatur placeat molestiae.
+                        In this fun game you can add as many Pacmen to the screen as you want and watch then bounce around the window.
+                        <br>Built in HTML, CSS, and Javascript
                     </p>
                 </div>
             </div>
-            <a href="#" target="_blank" rel="noopener noreferrer"><img src="images/pacman.jpeg" alt="Eyes"></a>
+            <a href="#https://github.com/nickcolstad/Pacmen" target="_blank" rel="noopener noreferrer"><img src="images/pacman.jpeg" alt="Eyes"></a>
         </div>
     </section>
 
     <!-- Contact Form -->
-    <div class="submit-message">
-        <h1>Submit a Message</h1>
+    <div class="submit-message" id="contact-me">
+        <h1>Contact Me</h1>
     </div>
 
     <div class="contact-form">
@@ -178,28 +198,11 @@
         </div>
         <button type="submit">SUBMIT <i class="fa-solid fa-paper-plane"></i></button>
     </form>
-
     </div>
 
 <!-- Nav Footer -->
-    <div class="nav-container">
-        <header>
-            <a href="index.html" class="logo"> Made with &hearts; <br>By Nick Colstad</a>
-
-            <nav>
-                <ul>
-                    <li><a href="#projects">My Work</a></li>
-                    <li><a href="#myskills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="social-header">
-            <ul>
-                <li><a href="https://github.com/nickcolstad"><img src="images/github.png" alt="gitHub"></a></li>
-                <li><a href="https://www.linkedin.com/in/nick-colstad-5373b5148"><img src="images/linkedin.png" alt="linkedin"></a></li>
-            </ul>
-        </div>
+    <div class="foot">
+        <a href="index.html" class="logo"> Made with &hearts; By Nick Colstad</a>
     </div>
 
 <!-- JS -->
@@ -252,7 +255,7 @@
         gsap.from('.transition3', {
             scrollTrigger: {
                 trigger: '.transition3',
-                start: "center bottom"
+                start: "top bottom"
             },
             y: 50,
             opacity: 0,
@@ -263,7 +266,7 @@
         gsap.from('.transition4', {
             scrollTrigger: {
                 trigger: '.transition4',
-                start: "center bottom"
+                start: "top bottom"
             },
             y: 50,
             opacity: 0,

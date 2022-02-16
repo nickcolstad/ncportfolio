@@ -85,18 +85,6 @@ section {
     position: relative;
 }
 
-.featured::before {
-    content: "";
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: #BFBFBF;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
 .subtitle {
     text-transform: uppercase;
     font-weight: bold;
@@ -167,11 +155,7 @@ section {
 
 .portfolio-container a img {
     border-radius: 1em;
-    margin-bottom: 2em;
-}
-
-.featured a img {
-    border-radius: 1em;
+    margin-bottom: 1em;
 }
 
 .hero-image {
@@ -186,6 +170,9 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .submit-message {
+      color: #049EFF;
   }
   form {
     width: 66%;
@@ -225,6 +212,7 @@ section {
     border: 1px solid #BFBFBF;
     width: 100%;
     cursor: pointer;
+    margin-bottom: 35px;
   }
   input:focus~label,
   input:valid~label {
@@ -315,6 +303,16 @@ section {
             img {
                 width: 30px;
             }
+        }
+    }
+
+    .submit-message, .contact-form {
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: unset;
+
+        h1, form {
+            background: #222;
         }
     }
 
